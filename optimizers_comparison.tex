@@ -100,6 +100,11 @@
 	
 	In addition to the above, we introduced a regularization term that penalizes variations in bixel values between neighboring regions, also employing a squared penalty.
 	
+	The optimization process involves finding the optimal bixel values (\(\mathbf{b}\)) by solving \(\mathbf{d} = \mathbf{L}\mathbf{b}\), where \(\mathbf{L}\) is a precomputed dose-influence matrix mapping bixels to voxels.
+	Notably, since negative energy rays are physically infeasible, we ensured that each bixel value is non-negative (\(b \geq 0 \quad \forall b \in \mathbf{b}\)).
+	To achieve this, we computed \(\mathbf{d} = \mathbf{L}\abs{\mathbf{b}}\), where \(\abs{\mathbf{b}}\) denotes the element-wise absolute value of \(\mathbf{b}\).
+	
+	
 	
 	\subsection{Open-source Optimizers}
 	
