@@ -81,6 +81,18 @@
 	We used the widely recognized TG-119 cases as a benchmark for evaluating radiation therapy plans optimization.
 	The TG-119 dataset provides specific dose goals, which we incorporated into our proposed cost function.
 	
+	The cost function is formulated as a weighted sum of multiple objectives, with each objective corresponding to a specific dose goal. The formulation is as follows:
+	
+	\[f(\mathbf{d}) = \sum_{o \in \mathcal{O}} w_o f_o(\mathbf{d})\]
+	
+	where:
+	\begin{itemize}
+		\item \(\mathbf{d}\) represents the dose distribution at the voxel level, and \(\mathbf{d}[s]\) denotes the dose on voxels within the structure \(s\)
+		\item \(\mathcal{O}\) denotes the set of objectives corresponding to dose volume goals
+		\item \(w_o\) signifies the weight assigned to the objective \(o \in \mathcal{O}\)
+		\item \(o_s\), \(o_d\), and \(o_v\) refer to the structure, dose, and volume goals of the objective \(o \in \mathcal{O}\)
+	\end{itemize}
+	
 	
 	
 	\subsection{Open-source Optimizers}
