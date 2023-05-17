@@ -98,6 +98,8 @@
 	If \(o\) represents a maximum dose volume constraint, \(f_o(\mathbf{d})\) is calculated as \(\sum_{d \in \mathbf{d}[o_s]}(d - o_d)_+^2\); if \(o\) represents a minimum dose volume constraint, then \(f_o(\mathbf{d})\) is calculated as \(\sum_{d \in \mathbf{d}[o_s]}(o_d - d)_+^2\).
 	The formulation involves a squared over/under-dose penalty function.
 	
+	In addition to the above, we introduced a regularization term that penalizes variations in bixel values between neighboring regions, also employing a squared penalty.
+	
 	
 	\subsection{Open-source Optimizers}
 	
