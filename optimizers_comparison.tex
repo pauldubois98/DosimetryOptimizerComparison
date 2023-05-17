@@ -104,7 +104,10 @@
 	Notably, since negative energy rays are physically infeasible, we ensured that each bixel value is non-negative (\(b \geq 0 \quad \forall b \in \mathbf{b}\)).
 	To achieve this, we computed \(\mathbf{d} = \mathbf{L}\abs{\mathbf{b}}\), where \(\abs{\mathbf{b}}\) denotes the element-wise absolute value of \(\mathbf{b}\).
 	
-	
+	By construction, the objective function is convex.
+	Consequently, minimizing the objective function with a given set of weights should invariably converge to the same radiotherapy plan.
+	To generate different treatment doses for the same patient case, dosimetrists can play withe the weights of each sub-objective function.
+	This is outside the scope of this small review article, so we decided to just set the weights of all constraints equal to one.
 	
 	\subsection{Open-source Optimizers}
 	
