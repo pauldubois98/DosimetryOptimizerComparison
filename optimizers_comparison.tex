@@ -94,6 +94,9 @@
 		\item \(o_s\), \(o_d\), and \(o_v\) refer to the structure, dose, and volume goals of the objective \(o \in \mathcal{O}\)
 	\end{itemize}
 	
+	The objective function \(f_o(\mathbf{d})\) is computed based on the specific type of dose volume constraint:
+	If \(o\) represents a maximum dose volume constraint, \(f_o(\mathbf{d})\) is calculated as \(\sum_{d \in \mathbf{d}[o_s]}(d - o_d)_+^2\); if \(o\) represents a minimum dose volume constraint, then \(f_o(\mathbf{d})\) is calculated as \(\sum_{d \in \mathbf{d}[o_s]}(o_d - d)_+^2\).
+	The formulation involves a squared over/under-dose penalty function.
 	
 	
 	\subsection{Open-source Optimizers}
