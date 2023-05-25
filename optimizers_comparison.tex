@@ -80,8 +80,11 @@
 	
 	\subsection{Data}
 	In this research endeavor, our focus was to evaluate the various open-source optimizers. 
-	We used the widely recognized TG-119 cases as a benchmark for evaluating radiation therapy plans optimization.
+	We used the widely recognized TG-119 \cite{AAPM-TG119} cases as a benchmark for evaluating radiation therapy plans optimization.
 	The TG-119 dataset provides specific dose goals, which we incorporated into our proposed cost function.
+	
+	We also used one real case of prostate cancer treatment from ICM.
+	For this case, doctors had provided specific dose goals, that we again incorporated into our proposed cost function.
 	
 	\subsection{Objective function}
 	The cost function is formulated as a weighted sum of multiple objectives, with each objective corresponding to a specific dose goal. The formulation is as follows:
