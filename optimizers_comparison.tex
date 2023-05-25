@@ -159,7 +159,7 @@
 	It aims to address some convergence issues that can occur in Adam by dynamically adjusting the variance of the adaptive learning rate.
 	\subparagraph{NAdam}
 	(Nesterov Adam) combines the Nesterov accelerated gradient method with the Adam optimizer.
-	It incorporates Nesterov momentum into the Adam update rule to improve convergence and provide better generalization.
+	It incorporates Nesterov momentum into the Adam update rule to improve convergence and provide better generalization \cite{tato2018}.
 	\subparagraph{AdamDelta}
 	Is another variant of the Adam optimizer that replaces the second moment estimates (variance) with a delta parameter.
 	It eliminates the need for storing and updating the moving average of the squared gradients, which can be beneficial in memory-constrained settings.
