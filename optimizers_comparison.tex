@@ -24,14 +24,16 @@
 	
 	\section{Introduction}
 	Radiotherapy, a widely utilized intervention for cancer treatment, employs ionizing radiation to eliminate malignant cells.
-	Intensity-modulated radiation therapy (IMRT) has emerged as a notable technique within radiotherapy, aiming to deliver high radiation doses to tumors while minimizing exposure to healthy surrounding tissues.
-	Traditional IMRT strategies typically employ a set number of beams, often 5, 7, or 9, originating from various angles around the patient, commonly distributed evenly.
+	Intensity-modulated radiation therapy (IMRT) has emerged as a notable technique within radiotherapy, aiming to deliver high radiation doses to tumors while minimizing exposure to healthy surrounding tissues \cite{ReportIMRT2003}.
+	Traditional IMRT strategies typically employ a set number of beams, often 5, 7, or 9, originating from various angles around the patient, commonly distributed evenly \cite{Bortfeld_2006}.
 	Each beam's intensity is modulated to optimize the delivery of radiation doses to the tumor while reducing exposure to healthy tissues.
-	This approach surpasses the effectiveness of the 3D-conformal radiotherapy (3D-CRT) technique.
+	This approach surpasses the effectiveness of the 3D-conformal radiotherapy (3D-CRT) technique \cite{KOLE2012} \cite{PALMA2008} \cite{VERHEY1999}.
 	To facilitate precise and efficient radiation delivery, a computer-controlled device called the multi-leaf collimator (MLC) is utilized to shape the radiation beam according to the contours of the tumor.
 	
 	The effectiveness of a radiotherapy treatment plan relies on the optimization procedure, which involves a series of steps aimed at ensuring the optimal delivery of radiation in accordance with the prescribed guidelines of medical practitioners.
 	Typically, computer software is employed to facilitate the optimization process, taking into account various factors such as patient anatomy, the size and location of the tumor and organs, and the radiation objectives defined by medical professionals.
+	
+	While there has been comparison between commercial software\cite{Tang2019} \cite{Mora-Ramirez2020}, the aim of this paper is to investigate the best optimizer for this task among the open source optimizers.
 	
 	\paragraph{Pre-dose-optimization}
 	The initial stage of the optimization process entails the creation of a virtual representation of the patient's anatomical structure using advanced medical imaging modalities, such as computed tomography (CT) or magnetic resonance imaging (MRI) scans.
@@ -64,7 +66,7 @@
 	To ensure the precision and effectiveness of radiation therapy, a robust dose optimization process are essential.
 	
 	\subsection{Radiotherapy Dosimetry}
-	Radiotherapy dose optimization can be conceptualized as an inverse problem, whereby the objective is to determine the most suitable radiation dose distribution that aligns with the desired treatment outcome.
+	Radiotherapy dose optimization can be conceptualized as an inverse problem, whereby the objective is to determine the most suitable radiation dose distribution that aligns with the desired treatment outcome \cite{Webb2003}.
 	In other terms, the challenge lies in identifying the radiation intensity or fluence maps that deliver the prescribed dose to the tumor while minimizing exposure to healthy tissues.
 	
 	Mathematical optimization algorithms are employed to address the inverse problem of radiotherapy dose optimization.
