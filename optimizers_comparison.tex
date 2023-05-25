@@ -133,7 +133,11 @@
 	\paragraph{Newton}
 	Newton's method is an iterative optimization algorithm that uses the second-order derivative (Hessian matrix) to find the minimum of a function.
 	It updates the current estimate by taking into account both the first-order derivative (gradient) and the second-order derivative.
-
+	
+	\paragraph{RMSprop}
+	(Root Mean Square Propagation) is an optimization algorithm that addresses the problem of diminishing learning rates in traditional gradient descent methods.
+	It divides the learning rate by the root mean square of the past gradients, which helps to stabilize and speed up convergence.
+	
 	\paragraph{BFGS-based}
 	\subparagraph{Pure BFGS}
 	(Broyden-Fletcher-Goldfarb-Shanno) is a quasi-Newton method that approximates the Hessian matrix using updates based on gradient information.
@@ -162,10 +166,6 @@
 	(Resilient Backpropagation) is an optimization algorithm specifically designed for neural networks.
 	It updates the weights based on the sign of the gradient, adjusting the step size adaptively.
 	Rprop performs weight updates independently for each weight parameter.
-	
-	\paragraph{RMSprop}
-	(Root Mean Square Propagation) is an optimization algorithm that addresses the problem of diminishing learning rates in traditional gradient descent methods.
-	It divides the learning rate by the root mean square of the past gradients, which helps to stabilize and speed up convergence.
 	
 	\paragraph{SLSQP}
 	
