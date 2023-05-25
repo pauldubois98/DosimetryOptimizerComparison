@@ -1,6 +1,8 @@
 \documentclass[a4paper]{article}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
 
 %opening
 \title{Radiotherapy Dosimetry: A Review on Open-Source Optimizer}
@@ -144,6 +146,16 @@
 	
 	
 	\section{Results}
+	\paragraph{TGG119: Multiple PTVs}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.49\textwidth]{figures/TGG119Multi-iter.pdf}		\includegraphics[width=0.49\textwidth]{figures/TGG119Multi-time.pdf}
+		\caption{TGG 119: Multiple PTVs}
+		\label{fig:tgg119multi}
+	\end{figure}
+	
+	% lbfgs > bfgs even in terms of iter => approx is nice in this case
+	
 	
 	\section{Discussion}
 	
