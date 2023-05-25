@@ -156,6 +156,7 @@
 	Is another variant of the Adam optimizer that replaces the second moment estimates (variance) with a delta parameter.
 	It eliminates the need for storing and updating the moving average of the squared gradients, which can be beneficial in memory-constrained settings.
 	\subparagraph{Adamax}
+	Is an extension of the Adam optimizer that uses the infinity norm (max norm) of the gradients instead of the L2 norm. It is designed to handle sparse gradients more effectively and can be particularly useful in deep learning models.
 
 	\paragraph{Rprop}
 	
