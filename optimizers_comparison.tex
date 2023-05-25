@@ -138,9 +138,10 @@
 	\subparagraph{Pure BFGS}
 	(Broyden-Fletcher-Goldfarb-Shanno) is a quasi-Newton method that approximates the Hessian matrix using updates based on gradient information.
 	It performs a line search to determine the step size that minimizes the objective function along the search direction.
-	
 	\subparagraph{L-BFGS}
-
+	(Limited-memory BFGS) is a variation of BFGS that uses a limited-memory approach to approximate the Hessian matrix.
+	It stores a limited number of past gradient and parameter values to compute an approximate inverse Hessian matrix efficiently.
+	
 	\paragraph{Adam-based}
 	\subparagraph{Pure Adam}
 	\subparagraph{RAdam}
