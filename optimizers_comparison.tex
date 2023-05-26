@@ -3,10 +3,14 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{authblk}
 
 %opening
 \title{Radiotherapy Dosimetry: A Review on Open-Source Optimizer}
-\author{Paul Dubois}
+\author[1,2,3]{Paul Dubois}
+\affil[1]{TheraPanacea}
+\affil[2]{MICS, CentraleSupélec}
+\affil[3]{Institut du Cancer de Montpellier}
 
 \newcommand{\abs}[1]{|{#1}|}
 \newcommand{\R}{\mathbb{R}}
@@ -207,7 +211,7 @@
 	\end{figure}
 	
 	\paragraph{Newton's method}
-	Looking only at iterations-wise graph, Newton's method appears to be the very best, reaching within 10 steps a stable converged state in all 4 cases studied.
+	Based on the iterations-wise graph analysis, Newton's method emerges as the most optimal, consistently achieving a stable converged state within a mere 10 steps across all four examined cases.
 	However, Newton's method steps are very expensive to compute, since it uses second order derivative (the Hessian) that is expensive to compute (in terms of calculation time).
 	
 	\paragraph{Best Algorithms}
@@ -216,7 +220,7 @@
 	These observations are true both iteration and time-wise.
 	
 	TGG 119 Multiple PTVs (figure \ref{fig:tgg119multi}) is the smallest problem, and th real ICM prostate case (fig. \ref{fig:ICMprostate}) is the largest problem (in terms of patient/organs/structure volume size); TGG 119 fake head \& neck (fig. \ref{fig:tgg119hn}) and TGG 119 fake prostate (fig. \ref{fig:tgg119prostate}) have similar sizes.
-	It appears that as the problem size gets bigger, LBFGS performs better than RMSprop and Adam.
+	Notably, there is an observable trend indicating that as the problem size increases, LBFGS outperforms both RMSprop and Adam optimization algorithms.
 	
 	\paragraph{LBFGS vs BFGS}
 	It would be expected that BFGS performs better than LBFGS in terms of iterations, but not in terms of time (since LBFGS is a fast approximation of the BFGS technique).
