@@ -175,28 +175,28 @@
 	
 	\section{Results}
 	
-	\begin{figure}[H]
+	\begin{figure}
 		\centering
 		\includegraphics[width=0.95\textwidth]{figures/TGG119Multi-iter.pdf}		\includegraphics[width=0.95\textwidth]{figures/TGG119Multi-time.pdf}
 		\caption{TGG 119: Multiple PTVs}
 		\label{fig:tgg119multi}
 	\end{figure}
 	
-	\begin{figure}[H]
+	\begin{figure}
 		\centering
 		\includegraphics[width=0.95\textwidth]{figures/TGG119HN-iter.pdf}		\includegraphics[width=0.95\textwidth]{figures/TGG119HN-time.pdf}
 		\caption{TGG 119: Head and Neck}
 		\label{fig:tgg119hn}
 	\end{figure}
 	
-	\begin{figure}[H]
+	\begin{figure}
 		\centering
 		\includegraphics[width=0.95\textwidth]{figures/TGG119Prostate-iter.pdf}		\includegraphics[width=0.95\textwidth]{figures/TGG119Prostate-time.pdf}
 		\caption{TGG 119: Prostate}
 		\label{fig:tgg119prostate}
 	\end{figure}
 	
-	\begin{figure}[H]
+	\begin{figure}
 		\centering
 		\includegraphics[width=0.95\textwidth]{figures/ICMProstate-iter.pdf}		\includegraphics[width=0.95\textwidth]{figures/ICMProstate-time.pdf}
 		\caption{ICM: (Typical) Prostate}
@@ -221,6 +221,9 @@
 	This suggests that the limited memory approximation made are biased towards suitable directions in these type of problems.
 	
 	\section{Discussion}
+	If it was possible to make Newton's method faster, than we would advise to use Newton's optimization algorithm.
+	However, to the best of our knowledge, computing the Hessian remains long, not only in our implementation.
+	
 	
 	
 	\bibliographystyle{plain}
