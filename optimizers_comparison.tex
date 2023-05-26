@@ -212,11 +212,13 @@
 	Adam (and RMSprop, to a lesser extent) appear to have more "wavy" cost curves, while LBFGS cost decreases in a more stable way.
 	These observations are true both iteration and time-wise.
 	
-	TGG119 Multiple PTVs is the smallest problem, and th real ICM prostate case is the largest problem (in terms of patient/organs/structure volume size).
+	TGG 119 Multiple PTVs is the smallest problem, and th real ICM prostate case is the largest problem (in terms of patient/organs/structure volume size).
 	It appears that as the problem size gets bigger, LBFGS performs better than RMSprop and Adam.
 	
-	% lbfgs > bfgs even in terms of iter => approx is nice in this case
-	
+	\paragraph{LBFGS vs BFGS}
+	It would be expected that BFGS performs better than LBFGS in terms of iterations, but not in terms of time (since LBFGS is a fast approximation of the BFGS technique).
+	However, we observe that LBFGS outperforms BFGS even on the iterations-wise graph.
+	This suggests that the limited memory approximation made are biased towards suitable directions in these type of problems.
 	
 	\section{Discussion}
 	
