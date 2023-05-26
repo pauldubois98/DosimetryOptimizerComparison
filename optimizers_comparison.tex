@@ -88,6 +88,9 @@
 	We also used one real case of prostate cancer treatment from ICM.
 	For this case, doctors had provided specific dose goals, that we again incorporated into our proposed cost function.
 	
+	The TGG 119 multiple PTVs is a theoretical case, unlikely to happen in real life.
+	However, the three other cases represent a comprehensive set of what dosimetrists could encounter on a daily basis.
+	
 	The simulation of the beams was done using TheraPanacea dose engine, which uses collapse cone convolution techniques, and is conformal to other simulator available on the market.
 	
 	\subsection{Objective function}
@@ -224,7 +227,7 @@
 	If it was possible to make Newton's method faster, than we would advise to use Newton's optimization algorithm.
 	However, to the best of our knowledge, computing the Hessian remains long, not only in our implementation.
 	
-	Hence, we advise to use the LBFGS algorithm for the problem of dose optimization i radiotherapy; it appears to be the fastest to converge, and converged steadily on the four cases tested, that represent a comprehensive set of what dosimetrists could encounter.
+	Hence, we advise to use the LBFGS algorithm for the problem of dose optimization i radiotherapy; it appears to be the fastest to converge, and converged steadily on the four cases tested.
 	
 	
 	\bibliographystyle{plain}
